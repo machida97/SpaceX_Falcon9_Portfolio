@@ -22,8 +22,7 @@ This dashboard allows users to filter and analyze SpaceX launches by site, paylo
 
 This app is deployed on **Render**:
 
-[https://spacex-dash-dashboard.onrender.com/](https://spacex-dash-dashboard.onrender.com/)
-
+[https://spacex-launch-dashboard.onrender.com/](https://spacex-launch-dashboard.onrender.com)
 ---
 
 ## Dataset
