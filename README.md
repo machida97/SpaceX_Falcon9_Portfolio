@@ -37,11 +37,11 @@ SpaceX_Falcon9_Portfolio/
 This project started as the **IBM Applied Data Science Capstone** on Coursera, which uses SpaceX Falcon 9 launch data to explore landing success.  
 
 I extended the project by:  
-- Performing **SQL-based exploratory data analysis**  
-- Adding **interactive geospatial visualizations** with Folium  
+- Performing additional **SQL-based exploratory data analysis**  
+- Adding additional **interactive geospatial and weather visualizations** with Folium  
 - Creating a **full predictive modeling pipeline** with multiple classification algorithms  
 - Conducting **feature importance analysis and model interpretability studies**  
-- Deploying a **Plotly Dash interactive dashboard** hosted online  
+- Deploying a **Plotly Dash interactive dashboard** with additional features hosted online  
 
 ---
 
