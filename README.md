@@ -6,7 +6,7 @@ This repository is an **extended and enhanced version** of the Coursera **IBM Ap
 
 ## 📁 Repository Structure
 
-SpaceX_Falcon9_Portfolio/
+Spacex_Falcon9_Portfolio/
 │
 ├── data/
 │ ├── dataset_1.csv # Generated from data wrangling notebook
@@ -37,6 +37,7 @@ SpaceX_Falcon9_Portfolio/
 This project started as the **IBM Applied Data Science Capstone** on Coursera, which uses SpaceX Falcon 9 launch data to explore landing success.  
 
 I extended the project by:  
+- Using addtional weather data
 - Performing additional **SQL-based exploratory data analysis**  
 - Adding additional **interactive geospatial and weather visualizations** with Folium  
 - Creating a **full predictive modeling pipeline** with multiple classification algorithms  
