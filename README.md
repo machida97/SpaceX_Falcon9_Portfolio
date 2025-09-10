@@ -1,6 +1,15 @@
 # SpaceX Falcon 9 Launch Analysis Portfolio
 
-This repository is an **extended and enhanced version** of the Coursera **IBM Applied Data Science Capstone Project**, focusing on SpaceX Falcon 9 launch data. It demonstrates an **end-to-end data science workflow**, including data wrangling, SQL and visual EDA, interactive geospatial mapping, predictive modeling, and deployment-ready dashboards.
+This repository is a **portfolio project** showcasing end-to-end data science skills, using SpaceX Falcon 9 launch data. It builds on the **Coursera IBM Applied Data Science Capstone**, extending the work with additional data, EDA, visualizations, interactive maps, and predictive modeling.  
+
+The project demonstrates:
+
+- Data wrangling and cleaning
+- SQL-based exploratory data analysis
+- Visual EDA with matplotlib and seaborn
+- Interactive geospatial analytics with Folium
+- Predictive modeling for booster landing success
+- Deployment of a Plotly Dash interactive dashboard
 
 ---
 
@@ -8,12 +17,12 @@ This repository is an **extended and enhanced version** of the Coursera **IBM Ap
 
 
 ```text
-spacex-data-science-portfolio/
+SpaceX_Falcon9_Portfolio/
 │
-├── data/
-│ ├── dataset_part_1.csv # Generated from data collection/wrangling
-│ ├── dataset_part_2.csv # Cleaned version of dataset_part_1
-│ └── dataset_part_3.csv # Feature-selected dataset for predictive modeling
+├── datasets/
+│ ├── dataset_part_1.csv # Generated from data collection & wrangling
+│ ├── dataset_part_2.csv # Cleaned dataset
+│ └── dataset_part_3.csv # Feature-selected dataset for modeling
 │
 ├── notebooks/
 │ ├── 1_SpaceX_Falcon9_Data_Collection_and_Enrichment.ipynb
@@ -31,7 +40,7 @@ spacex-data-science-portfolio/
 │ ├── Readme.rtf
 │ ├── app.py
 │ ├── requirements.txt
-│ └── spacex_launch_dash.csv # Dataset used exclusively by the Dash app
+│ └── spacex_launch_dash.csv # Dataset for the Dash app
 │
 ├── README.md
 └── requirements.txt
