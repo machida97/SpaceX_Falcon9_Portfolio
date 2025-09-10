@@ -6,30 +6,36 @@ This repository is an **extended and enhanced version** of the Coursera **IBM Ap
 
 ## 📁 Repository Structure
 
-Spacex_Falcon9_Portfolio/
+
+```text
+spacex-data-science-portfolio/
 │
 ├── data/
-│ ├── dataset_1.csv # Generated from data wrangling notebook
-│ ├── dataset_2.csv # Cleaned version of dataset_1
-│ └── dataset_3.csv # Feature-selected dataset for modeling
+│ ├── dataset_part_1.csv # Generated from data collection/wrangling
+│ ├── dataset_part_2.csv # Cleaned version of dataset_part_1
+│ └── dataset_part_3.csv # Feature-selected dataset for predictive modeling
 │
 ├── notebooks/
-│ ├── 1_Data_Wrangling.ipynb
-│ ├── 2_SQL_EDA.ipynb
-│ ├── 3_Visual_EDA.ipynb
-│ ├── 4_Interactive_Folium.ipynb
-│ └── 5_Predictive_Modeling.ipynb
+│ ├── 1_SpaceX_Falcon9_Data_Collection_and_Enrichment.ipynb
+│ ├── 2_SpaceX_Falcon_9_Data_Wrangling_and_Preparation.ipynb
+│ ├── 3_SpaceX_Falcon_9_SQL_EDA.ipynb
+│ ├── 4_Spacex_Falcon_9_Visualisation_EDA.ipynb
+│ ├── 5_SpaceX_Falcon_9_Interactive_Visual_Analytics_with_Folium.ipynb
+│ └── 6_SpaceX_Predictive_Analysis_(Classification).ipynb
 │
 ├── models/
 │ └── spacex_logreg_model.pkl # Saved Logistic Regression model
 │
-├── dashboards/
-│ └── SpaceX_Dash_App/ # Plotly Dash app folder
+├── dash_app/
+│ ├── Procfile
+│ ├── Readme.rtf
+│ ├── app.py
+│ ├── requirements.txt
+│ └── spacex_launch_dash.csv # Dataset used exclusively by the Dash app
 │
 ├── README.md
 └── requirements.txt
-
-
+```
 ---
 
 ## 📖 Project Background
