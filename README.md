@@ -37,7 +37,7 @@ SpaceX_Falcon9_Portfolio/
 │
 ├── dash_app/
 │ ├── Procfile
-│ ├── Readme.rtf
+│ ├── README.md
 │ ├── app.py
 │ ├── requirements.txt
 │ └── spacex_launch_dash.csv # Dataset for the Dash app
