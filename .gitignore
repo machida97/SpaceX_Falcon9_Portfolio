@@ -1,0 +1,59 @@
+# ------------------------
+# System / OS files
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+*.log
+
+# ------------------------
+# Virtual environments
+# ------------------------
+venv/
+.env/
+.venv/
+
+# ------------------------
+# Jupyter
+# ------------------------
+.ipynb_checkpoints/
+*.ipynb_convert
+*.nbconvert
+
+# ------------------------
+# IDE / Editor configs
+# ------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------
+# Data files (keep only what you need)
+# ------------------------
+*.csv
+!datasets/dataset_1.csv
+!datasets/dataset_2.csv
+!datasets/dataset_3.csv
+!dash_app/spacex_dash.csv
+
+# ------------------------
+# Model artifacts (keep specific ones)
+# ------------------------
+*.pkl
+!models/spacex_logreg_model.pkl
+
+# ------------------------
+# HTML results
+# ------------------------
+*.html
+!results/folium_weather_launch_sites.html

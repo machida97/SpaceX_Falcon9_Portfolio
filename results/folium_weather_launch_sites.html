@@ -1,0 +1,3533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_44e7881740f02af3870ca79e727304a8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_44e7881740f02af3870ca79e727304a8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_44e7881740f02af3870ca79e727304a8 = L.map(
+                "map_44e7881740f02af3870ca79e727304a8",
+                {
+                    center: [29.44996262777778, -86.36647705111112],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_14ae2ba032a6550dbdd81b21a2f0bad9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_14ae2ba032a6550dbdd81b21a2f0bad9.addTo(map_44e7881740f02af3870ca79e727304a8);
+        
+    
+            var marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_65ba2014aa9a46e9f82fecccc8f89b2d = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_d702ce33945ca1c01394ee28ed243e84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb45fdb2ebdc9c8ba13da3509225b7cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23d9920e9f83d6cb697d4dba2b70d59a = $(`<div id="html_23d9920e9f83d6cb697d4dba2b70d59a" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 25.7°C<br><b>Wind (Speed):</b> 9.7 km/h<br><b>Payload Mass:</b> 6123.547647058824 kg</div>`)[0];
+                popup_eb45fdb2ebdc9c8ba13da3509225b7cd.setContent(html_23d9920e9f83d6cb697d4dba2b70d59a);
+            
+        
+
+        marker_65ba2014aa9a46e9f82fecccc8f89b2d.bindPopup(popup_eb45fdb2ebdc9c8ba13da3509225b7cd)
+        ;
+
+        
+    
+    
+                marker_65ba2014aa9a46e9f82fecccc8f89b2d.setIcon(icon_d702ce33945ca1c01394ee28ed243e84);
+            
+    
+            var marker_04b1cd127d0c12bcb6b97c453f489ba4 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_6803d6d1cf520aee9e7f3e4de51b6b58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b196780e56bab29be70b102a7628bfc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4942a870bc437ea22b7585335629c3c9 = $(`<div id="html_4942a870bc437ea22b7585335629c3c9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 24.7°C<br><b>Wind (Speed):</b> 13.5 km/h<br><b>Payload Mass:</b> 525.0 kg</div>`)[0];
+                popup_b196780e56bab29be70b102a7628bfc2.setContent(html_4942a870bc437ea22b7585335629c3c9);
+            
+        
+
+        marker_04b1cd127d0c12bcb6b97c453f489ba4.bindPopup(popup_b196780e56bab29be70b102a7628bfc2)
+        ;
+
+        
+    
+    
+                marker_04b1cd127d0c12bcb6b97c453f489ba4.setIcon(icon_6803d6d1cf520aee9e7f3e4de51b6b58);
+            
+    
+            var marker_7e19f403c0d886981636b61b0a1757a3 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_c405e1e7bc0c2c15b5a0a50ed0463270 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2c046d7c0dbe2ce3ca689a4b3f2f1a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c4f9c467319c04b91fa5608d33785d2 = $(`<div id="html_3c4f9c467319c04b91fa5608d33785d2" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 14.8°C<br><b>Wind (Speed):</b> 15.3 km/h<br><b>Payload Mass:</b> 677.0 kg</div>`)[0];
+                popup_b2c046d7c0dbe2ce3ca689a4b3f2f1a2.setContent(html_3c4f9c467319c04b91fa5608d33785d2);
+            
+        
+
+        marker_7e19f403c0d886981636b61b0a1757a3.bindPopup(popup_b2c046d7c0dbe2ce3ca689a4b3f2f1a2)
+        ;
+
+        
+    
+    
+                marker_7e19f403c0d886981636b61b0a1757a3.setIcon(icon_c405e1e7bc0c2c15b5a0a50ed0463270);
+            
+    
+            var marker_ab94c237282ac60ad399775eeb0c63da = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_7a505f79c53f9c13374836dc66dadbdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47ad01a77e8e2e4c4d7ada0e5454b9fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f2b301f078c0c36f352550eff1898b8 = $(`<div id="html_6f2b301f078c0c36f352550eff1898b8" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> No<br><b>Temp (Avg):</b> 15.1°C<br><b>Wind (Speed):</b> 10.8 km/h<br><b>Payload Mass:</b> 500.0 kg</div>`)[0];
+                popup_47ad01a77e8e2e4c4d7ada0e5454b9fb.setContent(html_6f2b301f078c0c36f352550eff1898b8);
+            
+        
+
+        marker_ab94c237282ac60ad399775eeb0c63da.bindPopup(popup_47ad01a77e8e2e4c4d7ada0e5454b9fb)
+        ;
+
+        
+    
+    
+                marker_ab94c237282ac60ad399775eeb0c63da.setIcon(icon_7a505f79c53f9c13374836dc66dadbdc);
+            
+    
+            var marker_a733e0086ea549ea6eb604b8d648cf51 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_1a8bff3ca9d5f026279f351c36b8e5fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f701b0094ab8fa01650e76be46bb140d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36e1706b285dba7fddcd2ed9254d00c2 = $(`<div id="html_36e1706b285dba7fddcd2ed9254d00c2" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 18.1°C<br><b>Wind (Speed):</b> 5.7 km/h<br><b>Payload Mass:</b> 3170.0 kg</div>`)[0];
+                popup_f701b0094ab8fa01650e76be46bb140d.setContent(html_36e1706b285dba7fddcd2ed9254d00c2);
+            
+        
+
+        marker_a733e0086ea549ea6eb604b8d648cf51.bindPopup(popup_f701b0094ab8fa01650e76be46bb140d)
+        ;
+
+        
+    
+    
+                marker_a733e0086ea549ea6eb604b8d648cf51.setIcon(icon_1a8bff3ca9d5f026279f351c36b8e5fb);
+            
+    
+            var marker_ecc63dc82502820c3d32feae4d86a0ff = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_553bad068cabeee406c0f4c61f046918 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d68c5ab7472a567bdde25b136895396 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbb8a6dce58d152cb54f8fd354598e16 = $(`<div id="html_dbb8a6dce58d152cb54f8fd354598e16" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 17.9°C<br><b>Wind (Speed):</b> 22.7 km/h<br><b>Payload Mass:</b> 3325.0 kg</div>`)[0];
+                popup_5d68c5ab7472a567bdde25b136895396.setContent(html_dbb8a6dce58d152cb54f8fd354598e16);
+            
+        
+
+        marker_ecc63dc82502820c3d32feae4d86a0ff.bindPopup(popup_5d68c5ab7472a567bdde25b136895396)
+        ;
+
+        
+    
+    
+                marker_ecc63dc82502820c3d32feae4d86a0ff.setIcon(icon_553bad068cabeee406c0f4c61f046918);
+            
+    
+            var marker_1970a71b2abc55c5a03c8c8afeec878d = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_5c40b2f4f727acc280d5e3c71695c7ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a1389305fd95b35e43b7cbad19f0349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9b2583efdbc0b272d690a57796e6491 = $(`<div id="html_c9b2583efdbc0b272d690a57796e6491" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 22.9°C<br><b>Wind (Speed):</b> 16.6 km/h<br><b>Payload Mass:</b> 2296.0 kg</div>`)[0];
+                popup_7a1389305fd95b35e43b7cbad19f0349.setContent(html_c9b2583efdbc0b272d690a57796e6491);
+            
+        
+
+        marker_1970a71b2abc55c5a03c8c8afeec878d.bindPopup(popup_7a1389305fd95b35e43b7cbad19f0349)
+        ;
+
+        
+    
+    
+                marker_1970a71b2abc55c5a03c8c8afeec878d.setIcon(icon_5c40b2f4f727acc280d5e3c71695c7ef);
+            
+    
+            var marker_6ed72def2361480cc258c1ae26970440 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_4851cf5a85aa50490de37489cf4f9d35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_360519b728385be26c96192477093944 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12d31e67fddb42334959369e8eebd9ee = $(`<div id="html_12d31e67fddb42334959369e8eebd9ee" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 28.1°C<br><b>Wind (Speed):</b> 13.1 km/h<br><b>Payload Mass:</b> 1316.0 kg</div>`)[0];
+                popup_360519b728385be26c96192477093944.setContent(html_12d31e67fddb42334959369e8eebd9ee);
+            
+        
+
+        marker_6ed72def2361480cc258c1ae26970440.bindPopup(popup_360519b728385be26c96192477093944)
+        ;
+
+        
+    
+    
+                marker_6ed72def2361480cc258c1ae26970440.setIcon(icon_4851cf5a85aa50490de37489cf4f9d35);
+            
+    
+            var marker_5b653f4772690eafe3d9700d88c0dcb1 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_590c191f6013158e13c6cd41d0648544 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9be3ab6c493c66730f4bca5a4e866fbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c72d684877df40a0179ea78e997e3fe = $(`<div id="html_7c72d684877df40a0179ea78e997e3fe" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 27.1°C<br><b>Wind (Speed):</b> 11.1 km/h<br><b>Payload Mass:</b> 4535.0 kg</div>`)[0];
+                popup_9be3ab6c493c66730f4bca5a4e866fbb.setContent(html_7c72d684877df40a0179ea78e997e3fe);
+            
+        
+
+        marker_5b653f4772690eafe3d9700d88c0dcb1.bindPopup(popup_9be3ab6c493c66730f4bca5a4e866fbb)
+        ;
+
+        
+    
+    
+                marker_5b653f4772690eafe3d9700d88c0dcb1.setIcon(icon_590c191f6013158e13c6cd41d0648544);
+            
+    
+            var marker_49a06f5d2545cd5f44834205e4572d03 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_744f97d4d35fc55e0b1e190074a04f33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e728928456fec272bdd447f8d36113a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4884e70f58a84fe493ed5344444c6c7c = $(`<div id="html_4884e70f58a84fe493ed5344444c6c7c" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 25.7°C<br><b>Wind (Speed):</b> 8.7 km/h<br><b>Payload Mass:</b> 4428.0 kg</div>`)[0];
+                popup_8e728928456fec272bdd447f8d36113a.setContent(html_4884e70f58a84fe493ed5344444c6c7c);
+            
+        
+
+        marker_49a06f5d2545cd5f44834205e4572d03.bindPopup(popup_8e728928456fec272bdd447f8d36113a)
+        ;
+
+        
+    
+    
+                marker_49a06f5d2545cd5f44834205e4572d03.setIcon(icon_744f97d4d35fc55e0b1e190074a04f33);
+            
+    
+            var marker_64dd0207c91c99b4e5a918c6d68e248e = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_a7cae7fb6571c9217431df77fa5eedd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_731864d03b4cc828c4b9c4a57ac1dbb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fd981d4b2ef7c0fd5d0bcefe1e4a40d = $(`<div id="html_8fd981d4b2ef7c0fd5d0bcefe1e4a40d" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 24.9°C<br><b>Wind (Speed):</b> 8.3 km/h<br><b>Payload Mass:</b> 2216.0 kg</div>`)[0];
+                popup_731864d03b4cc828c4b9c4a57ac1dbb9.setContent(html_8fd981d4b2ef7c0fd5d0bcefe1e4a40d);
+            
+        
+
+        marker_64dd0207c91c99b4e5a918c6d68e248e.bindPopup(popup_731864d03b4cc828c4b9c4a57ac1dbb9)
+        ;
+
+        
+    
+    
+                marker_64dd0207c91c99b4e5a918c6d68e248e.setIcon(icon_a7cae7fb6571c9217431df77fa5eedd3);
+            
+    
+            var marker_1f8a13575b03a84d07c33c30c96ef0d5 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_9e15afc2fd014962053ff8e28418b06f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79f4cea3fe7ea0479f46870049d58186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab598fdd58f1805c6a088a3946350936 = $(`<div id="html_ab598fdd58f1805c6a088a3946350936" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 15.5°C<br><b>Wind (Speed):</b> 16.4 km/h<br><b>Payload Mass:</b> 2395.0 kg</div>`)[0];
+                popup_79f4cea3fe7ea0479f46870049d58186.setContent(html_ab598fdd58f1805c6a088a3946350936);
+            
+        
+
+        marker_1f8a13575b03a84d07c33c30c96ef0d5.bindPopup(popup_79f4cea3fe7ea0479f46870049d58186)
+        ;
+
+        
+    
+    
+                marker_1f8a13575b03a84d07c33c30c96ef0d5.setIcon(icon_9e15afc2fd014962053ff8e28418b06f);
+            
+    
+            var marker_425458f2a8ce7d78c2c3231f7ece4494 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_1f8a213e3839b16c7f6eef80348b2974 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6f180e3c61e1ee2e82f36eba8f80150 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46783f21bb202cca9017e99bac1c4342 = $(`<div id="html_46783f21bb202cca9017e99bac1c4342" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 13.1°C<br><b>Wind (Speed):</b> 18.6 km/h<br><b>Payload Mass:</b> 570.0 kg</div>`)[0];
+                popup_f6f180e3c61e1ee2e82f36eba8f80150.setContent(html_46783f21bb202cca9017e99bac1c4342);
+            
+        
+
+        marker_425458f2a8ce7d78c2c3231f7ece4494.bindPopup(popup_f6f180e3c61e1ee2e82f36eba8f80150)
+        ;
+
+        
+    
+    
+                marker_425458f2a8ce7d78c2c3231f7ece4494.setIcon(icon_1f8a213e3839b16c7f6eef80348b2974);
+            
+    
+            var marker_f7ae2c591395d325bd85899623cd4c85 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_7aedcb8239f4b46e9ed8210f9f00c221 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37c048e24f8c8f25a694736ec4dbb733 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cbd89e619559ab7c172423d661be44b = $(`<div id="html_9cbd89e619559ab7c172423d661be44b" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 24.5°C<br><b>Wind (Speed):</b> 14.0 km/h<br><b>Payload Mass:</b> 1898.0 kg</div>`)[0];
+                popup_37c048e24f8c8f25a694736ec4dbb733.setContent(html_9cbd89e619559ab7c172423d661be44b);
+            
+        
+
+        marker_f7ae2c591395d325bd85899623cd4c85.bindPopup(popup_37c048e24f8c8f25a694736ec4dbb733)
+        ;
+
+        
+    
+    
+                marker_f7ae2c591395d325bd85899623cd4c85.setIcon(icon_7aedcb8239f4b46e9ed8210f9f00c221);
+            
+    
+            var marker_5ba8aa220906c144334a5a3e6cf783bb = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_9b976a1f178e6dea1999e205367c14a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_023548a818f32775ffd849d7b6af1b63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9e71132cf4a40750734df02b8f35e3e = $(`<div id="html_c9e71132cf4a40750734df02b8f35e3e" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 25.5°C<br><b>Wind (Speed):</b> 17.3 km/h<br><b>Payload Mass:</b> 4707.0 kg</div>`)[0];
+                popup_023548a818f32775ffd849d7b6af1b63.setContent(html_c9e71132cf4a40750734df02b8f35e3e);
+            
+        
+
+        marker_5ba8aa220906c144334a5a3e6cf783bb.bindPopup(popup_023548a818f32775ffd849d7b6af1b63)
+        ;
+
+        
+    
+    
+                marker_5ba8aa220906c144334a5a3e6cf783bb.setIcon(icon_9b976a1f178e6dea1999e205367c14a5);
+            
+    
+            var marker_4527eae7dbe74f4b162f3d7844bf9e4f = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_b351188bcd85b907bba558ab5c8ade08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1dfe44ccf7f758232532f24cf76e582b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b291dd534b7dcefd6ca54f02cf6c0f9 = $(`<div id="html_1b291dd534b7dcefd6ca54f02cf6c0f9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 28.6°C<br><b>Wind (Speed):</b> 14.4 km/h<br><b>Payload Mass:</b> 2477.0 kg</div>`)[0];
+                popup_1dfe44ccf7f758232532f24cf76e582b.setContent(html_1b291dd534b7dcefd6ca54f02cf6c0f9);
+            
+        
+
+        marker_4527eae7dbe74f4b162f3d7844bf9e4f.bindPopup(popup_1dfe44ccf7f758232532f24cf76e582b)
+        ;
+
+        
+    
+    
+                marker_4527eae7dbe74f4b162f3d7844bf9e4f.setIcon(icon_b351188bcd85b907bba558ab5c8ade08);
+            
+    
+            var marker_f35691777e37cf58865e35bf9a81245a = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_5facd56fb99f8a784ad4e5ab560e1c75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8ca83e8a46508971dc3b9bff675cc90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b6525b3505ef0344560b72a44ce6ed9 = $(`<div id="html_7b6525b3505ef0344560b72a44ce6ed9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 24.2°C<br><b>Wind (Speed):</b> 12.943396226415096 km/h<br><b>Payload Mass:</b> 2034.0 kg</div>`)[0];
+                popup_c8ca83e8a46508971dc3b9bff675cc90.setContent(html_7b6525b3505ef0344560b72a44ce6ed9);
+            
+        
+
+        marker_f35691777e37cf58865e35bf9a81245a.bindPopup(popup_c8ca83e8a46508971dc3b9bff675cc90)
+        ;
+
+        
+    
+    
+                marker_f35691777e37cf58865e35bf9a81245a.setIcon(icon_5facd56fb99f8a784ad4e5ab560e1c75);
+            
+    
+            var marker_32bf09ea103214e99ebb86406bf7b9f7 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_c5c49d405a345a25c0396090869697b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edd0fbab075c16e899014f3bc09cd5f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e28f093addd4322fe3391d13e226415 = $(`<div id="html_4e28f093addd4322fe3391d13e226415" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> No<br><b>Temp (Avg):</b> 12.5°C<br><b>Wind (Speed):</b> 3.6 km/h<br><b>Payload Mass:</b> 553.0 kg</div>`)[0];
+                popup_edd0fbab075c16e899014f3bc09cd5f8.setContent(html_4e28f093addd4322fe3391d13e226415);
+            
+        
+
+        marker_32bf09ea103214e99ebb86406bf7b9f7.bindPopup(popup_edd0fbab075c16e899014f3bc09cd5f8)
+        ;
+
+        
+    
+    
+                marker_32bf09ea103214e99ebb86406bf7b9f7.setIcon(icon_c5c49d405a345a25c0396090869697b1);
+            
+    
+            var marker_6867a436bebb918774af52b22c44097c = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_080f122c3e1257792b8ee255a1299b9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97d478cf78d1230eea309506cd3691e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c3621d7a523d7706cc50cb2ecd9b56e = $(`<div id="html_3c3621d7a523d7706cc50cb2ecd9b56e" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 18.8°C<br><b>Wind (Speed):</b> 16.7 km/h<br><b>Payload Mass:</b> 5271.0 kg</div>`)[0];
+                popup_97d478cf78d1230eea309506cd3691e8.setContent(html_3c3621d7a523d7706cc50cb2ecd9b56e);
+            
+        
+
+        marker_6867a436bebb918774af52b22c44097c.bindPopup(popup_97d478cf78d1230eea309506cd3691e8)
+        ;
+
+        
+    
+    
+                marker_6867a436bebb918774af52b22c44097c.setIcon(icon_080f122c3e1257792b8ee255a1299b9c);
+            
+    
+            var marker_a3d92442982b4fb5108d02e54b55c5cb = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_f7abd188116a82dd19ac1a7ea0cd7e7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4aa902158196b12f99a88a7d4a60e975 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9cbe5231e57e91b7db5c9a0b859b808 = $(`<div id="html_c9cbe5231e57e91b7db5c9a0b859b808" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 22.9°C<br><b>Wind (Speed):</b> 15.8 km/h<br><b>Payload Mass:</b> 3136.0 kg</div>`)[0];
+                popup_4aa902158196b12f99a88a7d4a60e975.setContent(html_c9cbe5231e57e91b7db5c9a0b859b808);
+            
+        
+
+        marker_a3d92442982b4fb5108d02e54b55c5cb.bindPopup(popup_4aa902158196b12f99a88a7d4a60e975)
+        ;
+
+        
+    
+    
+                marker_a3d92442982b4fb5108d02e54b55c5cb.setIcon(icon_f7abd188116a82dd19ac1a7ea0cd7e7b);
+            
+    
+            var marker_7dbbe60e97e9bff82f63e0a75e5e257a = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_602068309d7065e9ed8a6fdff6515404 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_097ccdb4ad5985058a6ccb09520ace0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36b1e532b83a4252c44f474e9c845165 = $(`<div id="html_36b1e532b83a4252c44f474e9c845165" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 20.2°C<br><b>Wind (Speed):</b> 15.9 km/h<br><b>Payload Mass:</b> 4696.0 kg</div>`)[0];
+                popup_097ccdb4ad5985058a6ccb09520ace0a.setContent(html_36b1e532b83a4252c44f474e9c845165);
+            
+        
+
+        marker_7dbbe60e97e9bff82f63e0a75e5e257a.bindPopup(popup_097ccdb4ad5985058a6ccb09520ace0a)
+        ;
+
+        
+    
+    
+                marker_7dbbe60e97e9bff82f63e0a75e5e257a.setIcon(icon_602068309d7065e9ed8a6fdff6515404);
+            
+    
+            var marker_72259d31bb47ddafcf2d917e01ac837d = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_79c0d41e707282d2805fccefeea18144 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_373cfdcae763c63e489e512d39f62237 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6973eba15f84bee4a02f9bcfab46c139 = $(`<div id="html_6973eba15f84bee4a02f9bcfab46c139" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 25.8°C<br><b>Wind (Speed):</b> 12.8 km/h<br><b>Payload Mass:</b> 3100.0 kg</div>`)[0];
+                popup_373cfdcae763c63e489e512d39f62237.setContent(html_6973eba15f84bee4a02f9bcfab46c139);
+            
+        
+
+        marker_72259d31bb47ddafcf2d917e01ac837d.bindPopup(popup_373cfdcae763c63e489e512d39f62237)
+        ;
+
+        
+    
+    
+                marker_72259d31bb47ddafcf2d917e01ac837d.setIcon(icon_79c0d41e707282d2805fccefeea18144);
+            
+    
+            var marker_7f5cead024324b8bf15b243135f6d4e5 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_46027b55e811be813d09582dd8e1eaae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_971828253a28657956be07b377b8974b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_349723e66c6ca50eef92f4a6bd5de0c9 = $(`<div id="html_349723e66c6ca50eef92f4a6bd5de0c9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 29.8°C<br><b>Wind (Speed):</b> 14.8 km/h<br><b>Payload Mass:</b> 2257.0 kg</div>`)[0];
+                popup_971828253a28657956be07b377b8974b.setContent(html_349723e66c6ca50eef92f4a6bd5de0c9);
+            
+        
+
+        marker_7f5cead024324b8bf15b243135f6d4e5.bindPopup(popup_971828253a28657956be07b377b8974b)
+        ;
+
+        
+    
+    
+                marker_7f5cead024324b8bf15b243135f6d4e5.setIcon(icon_46027b55e811be813d09582dd8e1eaae);
+            
+    
+            var marker_12852ee5d0f299536f777af8cb2cce96 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_97dc5cf875b8848db76f0c4beb0e5b20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80c20cc46bfd554bfedff94c5f060a77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b07bd098ae70bae807f60efccb5c24e1 = $(`<div id="html_b07bd098ae70bae807f60efccb5c24e1" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 28.3°C<br><b>Wind (Speed):</b> 11.4 km/h<br><b>Payload Mass:</b> 4600.0 kg</div>`)[0];
+                popup_80c20cc46bfd554bfedff94c5f060a77.setContent(html_b07bd098ae70bae807f60efccb5c24e1);
+            
+        
+
+        marker_12852ee5d0f299536f777af8cb2cce96.bindPopup(popup_80c20cc46bfd554bfedff94c5f060a77)
+        ;
+
+        
+    
+    
+                marker_12852ee5d0f299536f777af8cb2cce96.setIcon(icon_97dc5cf875b8848db76f0c4beb0e5b20);
+            
+    
+            var marker_84da929e6109c2238a0beb9e381ee7db = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_de89a18c98f30fb989690cb718abfca0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4a5aa7edc9e75287579c9fc183ad188 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d6d72f6e1428bef1c3600483d46ed7b = $(`<div id="html_0d6d72f6e1428bef1c3600483d46ed7b" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 26.4°C<br><b>Wind (Speed):</b> 17.8 km/h<br><b>Payload Mass:</b> 5500.0 kg</div>`)[0];
+                popup_e4a5aa7edc9e75287579c9fc183ad188.setContent(html_0d6d72f6e1428bef1c3600483d46ed7b);
+            
+        
+
+        marker_84da929e6109c2238a0beb9e381ee7db.bindPopup(popup_e4a5aa7edc9e75287579c9fc183ad188)
+        ;
+
+        
+    
+    
+                marker_84da929e6109c2238a0beb9e381ee7db.setIcon(icon_de89a18c98f30fb989690cb718abfca0);
+            
+    
+            var marker_1b9e42603e7646f0a8525a59b6f08924 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_016390ea145668ec759f9a598fdcc3a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a5842d2e250a90c937b94f19f0e4b6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_855a694a4d54490c283da21fa1ef0ac2 = $(`<div id="html_855a694a4d54490c283da21fa1ef0ac2" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 10.8°C<br><b>Wind (Speed):</b> 15.5 km/h<br><b>Payload Mass:</b> 9600.0 kg</div>`)[0];
+                popup_6a5842d2e250a90c937b94f19f0e4b6b.setContent(html_855a694a4d54490c283da21fa1ef0ac2);
+            
+        
+
+        marker_1b9e42603e7646f0a8525a59b6f08924.bindPopup(popup_6a5842d2e250a90c937b94f19f0e4b6b)
+        ;
+
+        
+    
+    
+                marker_1b9e42603e7646f0a8525a59b6f08924.setIcon(icon_016390ea145668ec759f9a598fdcc3a0);
+            
+    
+            var marker_38354b730f55c042a3989bbf37cb62c8 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_7cc742e382b71244fd368706637048c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ce2e3156c54db38e6fb588614f94bed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dce3c569eae45fbe1befc7dcf22a38c9 = $(`<div id="html_dce3c569eae45fbe1befc7dcf22a38c9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 19.8°C<br><b>Wind (Speed):</b> 8.5 km/h<br><b>Payload Mass:</b> 2490.0 kg</div>`)[0];
+                popup_3ce2e3156c54db38e6fb588614f94bed.setContent(html_dce3c569eae45fbe1befc7dcf22a38c9);
+            
+        
+
+        marker_38354b730f55c042a3989bbf37cb62c8.bindPopup(popup_3ce2e3156c54db38e6fb588614f94bed)
+        ;
+
+        
+    
+    
+                marker_38354b730f55c042a3989bbf37cb62c8.setIcon(icon_7cc742e382b71244fd368706637048c4);
+            
+    
+            var marker_4f88ede8418f45edade533ad75b1cd0f = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_2c73c246534a77444bfcfdeaf5a4e394 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1431bcca40fc2f10a6a80f7fc4afc5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6867041dd006f8d1286687ca960f2d3 = $(`<div id="html_c6867041dd006f8d1286687ca960f2d3" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> No<br><b>Temp (Avg):</b> 9.2°C<br><b>Wind (Speed):</b> 12.5 km/h<br><b>Payload Mass:</b> 5600.0 kg</div>`)[0];
+                popup_a1431bcca40fc2f10a6a80f7fc4afc5c.setContent(html_c6867041dd006f8d1286687ca960f2d3);
+            
+        
+
+        marker_4f88ede8418f45edade533ad75b1cd0f.bindPopup(popup_a1431bcca40fc2f10a6a80f7fc4afc5c)
+        ;
+
+        
+    
+    
+                marker_4f88ede8418f45edade533ad75b1cd0f.setIcon(icon_2c73c246534a77444bfcfdeaf5a4e394);
+            
+    
+            var marker_1946de260d99c093ffb83db3d8864e85 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_4b7cb62a8c807b3a8a27b72ba209d875 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d06fd476eef1aea47be630d2e499e267 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db11b57a5197a6e126185ab6d64f40cc = $(`<div id="html_db11b57a5197a6e126185ab6d64f40cc" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 23.6°C<br><b>Wind (Speed):</b> 13.4 km/h<br><b>Payload Mass:</b> 5300.0 kg</div>`)[0];
+                popup_d06fd476eef1aea47be630d2e499e267.setContent(html_db11b57a5197a6e126185ab6d64f40cc);
+            
+        
+
+        marker_1946de260d99c093ffb83db3d8864e85.bindPopup(popup_d06fd476eef1aea47be630d2e499e267)
+        ;
+
+        
+    
+    
+                marker_1946de260d99c093ffb83db3d8864e85.setIcon(icon_4b7cb62a8c807b3a8a27b72ba209d875);
+            
+    
+            var marker_85f751bd7a44152ef5b72268f35cc29e = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_82a95617da9890635fa7ce6d3d219ccf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db1a4bc31cb0c7fef9662445c9ded728 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a991033e9dcc52ec8e0795249ec3f148 = $(`<div id="html_a991033e9dcc52ec8e0795249ec3f148" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 25.8°C<br><b>Wind (Speed):</b> 21.9 km/h<br><b>Payload Mass:</b> 6123.547647058824 kg</div>`)[0];
+                popup_db1a4bc31cb0c7fef9662445c9ded728.setContent(html_a991033e9dcc52ec8e0795249ec3f148);
+            
+        
+
+        marker_85f751bd7a44152ef5b72268f35cc29e.bindPopup(popup_db1a4bc31cb0c7fef9662445c9ded728)
+        ;
+
+        
+    
+    
+                marker_85f751bd7a44152ef5b72268f35cc29e.setIcon(icon_82a95617da9890635fa7ce6d3d219ccf);
+            
+    
+            var marker_11b9e85dddb0ac5e30f2b3a0f35afaeb = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_06c148ef61860c3287eb7c6012d2a05d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5d4f25f50640906cb305361dc35cc27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0bb210fa2e4ee908090688f85e7528d = $(`<div id="html_f0bb210fa2e4ee908090688f85e7528d" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> No<br><b>Temp (Avg):</b> 24.1°C<br><b>Wind (Speed):</b> 9.3 km/h<br><b>Payload Mass:</b> 6070.0 kg</div>`)[0];
+                popup_b5d4f25f50640906cb305361dc35cc27.setContent(html_f0bb210fa2e4ee908090688f85e7528d);
+            
+        
+
+        marker_11b9e85dddb0ac5e30f2b3a0f35afaeb.bindPopup(popup_b5d4f25f50640906cb305361dc35cc27)
+        ;
+
+        
+    
+    
+                marker_11b9e85dddb0ac5e30f2b3a0f35afaeb.setIcon(icon_06c148ef61860c3287eb7c6012d2a05d);
+            
+    
+            var marker_64edceca4fc3354c23c59010a04dc1c8 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_6270f96543b5ceaf90e051c2eea29d98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12cb97153e9fc87fd8c7d4628567eff4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8af1fef89a1ea6e768326aafcdd53b8b = $(`<div id="html_8af1fef89a1ea6e768326aafcdd53b8b" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 24.8°C<br><b>Wind (Speed):</b> 6.5 km/h<br><b>Payload Mass:</b> 2708.0 kg</div>`)[0];
+                popup_12cb97153e9fc87fd8c7d4628567eff4.setContent(html_8af1fef89a1ea6e768326aafcdd53b8b);
+            
+        
+
+        marker_64edceca4fc3354c23c59010a04dc1c8.bindPopup(popup_12cb97153e9fc87fd8c7d4628567eff4)
+        ;
+
+        
+    
+    
+                marker_64edceca4fc3354c23c59010a04dc1c8.setIcon(icon_6270f96543b5ceaf90e051c2eea29d98);
+            
+    
+            var marker_b3a9a953877d56f6062cb2c5dcc4eaef = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_4997c5b42dce4435cf5a5e19376d3ab6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3643aef12f189ca2661cbd4788390b01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41f1b3fbd8c3e053f87d07a8d014f03c = $(`<div id="html_41f1b3fbd8c3e053f87d07a8d014f03c" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 28.1°C<br><b>Wind (Speed):</b> 12.2 km/h<br><b>Payload Mass:</b> 3669.0 kg</div>`)[0];
+                popup_3643aef12f189ca2661cbd4788390b01.setContent(html_41f1b3fbd8c3e053f87d07a8d014f03c);
+            
+        
+
+        marker_b3a9a953877d56f6062cb2c5dcc4eaef.bindPopup(popup_3643aef12f189ca2661cbd4788390b01)
+        ;
+
+        
+    
+    
+                marker_b3a9a953877d56f6062cb2c5dcc4eaef.setIcon(icon_4997c5b42dce4435cf5a5e19376d3ab6);
+            
+    
+            var marker_8a2aaab70775dad6b6d5a8e3a0a4dfef = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_3459913ea5e505c24d8069a6019c5942 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83f728bc1ea45948a04e0cc9ca8935c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c2f8f71e194c305b8978e815fe5fb68 = $(`<div id="html_9c2f8f71e194c305b8978e815fe5fb68" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 14.4°C<br><b>Wind (Speed):</b> 16.5 km/h<br><b>Payload Mass:</b> 9600.0 kg</div>`)[0];
+                popup_83f728bc1ea45948a04e0cc9ca8935c0.setContent(html_9c2f8f71e194c305b8978e815fe5fb68);
+            
+        
+
+        marker_8a2aaab70775dad6b6d5a8e3a0a4dfef.bindPopup(popup_83f728bc1ea45948a04e0cc9ca8935c0)
+        ;
+
+        
+    
+    
+                marker_8a2aaab70775dad6b6d5a8e3a0a4dfef.setIcon(icon_3459913ea5e505c24d8069a6019c5942);
+            
+    
+            var marker_a8f79a01367330b4e219c3144c0b99d4 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_6a39257f4a6db55c9b7ffd689ab8c586 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54b8380003a68563218d143eae8e3dbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e36d27cae31e2e3a9ad9765b643d2f9 = $(`<div id="html_1e36d27cae31e2e3a9ad9765b643d2f9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> No<br><b>Temp (Avg):</b> 28.4°C<br><b>Wind (Speed):</b> 7.6 km/h<br><b>Payload Mass:</b> 6761.0 kg</div>`)[0];
+                popup_54b8380003a68563218d143eae8e3dbc.setContent(html_1e36d27cae31e2e3a9ad9765b643d2f9);
+            
+        
+
+        marker_a8f79a01367330b4e219c3144c0b99d4.bindPopup(popup_54b8380003a68563218d143eae8e3dbc)
+        ;
+
+        
+    
+    
+                marker_a8f79a01367330b4e219c3144c0b99d4.setIcon(icon_6a39257f4a6db55c9b7ffd689ab8c586);
+            
+    
+            var marker_702acb695fc48b24c5ef6f6cd74c3645 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_c3e0fdea3028c88fc4bfe3864520fe90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01f009f55a28afcd10e9a28833353f2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_242e17cae147c95a3abc159ee01fb3f8 = $(`<div id="html_242e17cae147c95a3abc159ee01fb3f8" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 28.8°C<br><b>Wind (Speed):</b> 8.8 km/h<br><b>Payload Mass:</b> 2910.0 kg</div>`)[0];
+                popup_01f009f55a28afcd10e9a28833353f2f.setContent(html_242e17cae147c95a3abc159ee01fb3f8);
+            
+        
+
+        marker_702acb695fc48b24c5ef6f6cd74c3645.bindPopup(popup_01f009f55a28afcd10e9a28833353f2f)
+        ;
+
+        
+    
+    
+                marker_702acb695fc48b24c5ef6f6cd74c3645.setIcon(icon_c3e0fdea3028c88fc4bfe3864520fe90);
+            
+    
+            var marker_2b9c877ef0a2be25b987182b9059a5fe = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_b0e87b34b179dc5381154907a544d5ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4aba36626b3c35b20c617e559978ab24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23ac3cc181c85713807f87d6bbef3d6d = $(`<div id="html_23ac3cc181c85713807f87d6bbef3d6d" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 15.3°C<br><b>Wind (Speed):</b> 11.4 km/h<br><b>Payload Mass:</b> 475.0 kg</div>`)[0];
+                popup_4aba36626b3c35b20c617e559978ab24.setContent(html_23ac3cc181c85713807f87d6bbef3d6d);
+            
+        
+
+        marker_2b9c877ef0a2be25b987182b9059a5fe.bindPopup(popup_4aba36626b3c35b20c617e559978ab24)
+        ;
+
+        
+    
+    
+                marker_2b9c877ef0a2be25b987182b9059a5fe.setIcon(icon_b0e87b34b179dc5381154907a544d5ec);
+            
+    
+            var marker_134c7d162d50f0402b5fb7d8fa1cb833 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_252e81f87c42a3fb30c7ac1f22dec887 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9df3e0974c76bc9d35b39c17ce9c2ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7dfe7b309ef086cff8a92520456334e = $(`<div id="html_e7dfe7b309ef086cff8a92520456334e" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 27.0°C<br><b>Wind (Speed):</b> 7.2 km/h<br><b>Payload Mass:</b> 4990.0 kg</div>`)[0];
+                popup_e9df3e0974c76bc9d35b39c17ce9c2ff.setContent(html_e7dfe7b309ef086cff8a92520456334e);
+            
+        
+
+        marker_134c7d162d50f0402b5fb7d8fa1cb833.bindPopup(popup_e9df3e0974c76bc9d35b39c17ce9c2ff)
+        ;
+
+        
+    
+    
+                marker_134c7d162d50f0402b5fb7d8fa1cb833.setIcon(icon_252e81f87c42a3fb30c7ac1f22dec887);
+            
+    
+            var marker_b3250dc3ea6b1d77497f44a6dfd92782 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_686c60238a1573f4aa2a03331ef62b03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b53512779e1852cd237090613e544cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7848620eb338f6d53be8ebad445ec304 = $(`<div id="html_7848620eb338f6d53be8ebad445ec304" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 14.6°C<br><b>Wind (Speed):</b> 8.8 km/h<br><b>Payload Mass:</b> 9600.0 kg</div>`)[0];
+                popup_9b53512779e1852cd237090613e544cf.setContent(html_7848620eb338f6d53be8ebad445ec304);
+            
+        
+
+        marker_b3250dc3ea6b1d77497f44a6dfd92782.bindPopup(popup_9b53512779e1852cd237090613e544cf)
+        ;
+
+        
+    
+    
+                marker_b3250dc3ea6b1d77497f44a6dfd92782.setIcon(icon_686c60238a1573f4aa2a03331ef62b03);
+            
+    
+            var marker_6e310f4322493703ed1cf96acfdd2d68 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_129872a2d387cf6e188874c656a29e87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0059c3bab836b74a355a69b3ff1a6fe9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae88f959408f3ca1fb610411f5cc2870 = $(`<div id="html_ae88f959408f3ca1fb610411f5cc2870" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 26.4°C<br><b>Wind (Speed):</b> 12.4 km/h<br><b>Payload Mass:</b> 5200.0 kg</div>`)[0];
+                popup_0059c3bab836b74a355a69b3ff1a6fe9.setContent(html_ae88f959408f3ca1fb610411f5cc2870);
+            
+        
+
+        marker_6e310f4322493703ed1cf96acfdd2d68.bindPopup(popup_0059c3bab836b74a355a69b3ff1a6fe9)
+        ;
+
+        
+    
+    
+                marker_6e310f4322493703ed1cf96acfdd2d68.setIcon(icon_129872a2d387cf6e188874c656a29e87);
+            
+    
+            var marker_e6b7e33be4e31f1baf1048638d334eac = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_c7925e8e1c5e31db55cfc4bb1bcda0af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba4d39f04d0ef0db8ccdd512067b7876 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a061be365b40b5aff856e82ca5c68e1 = $(`<div id="html_8a061be365b40b5aff856e82ca5c68e1" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 13.2°C<br><b>Wind (Speed):</b> 12.8 km/h<br><b>Payload Mass:</b> 3700.0 kg</div>`)[0];
+                popup_ba4d39f04d0ef0db8ccdd512067b7876.setContent(html_8a061be365b40b5aff856e82ca5c68e1);
+            
+        
+
+        marker_e6b7e33be4e31f1baf1048638d334eac.bindPopup(popup_ba4d39f04d0ef0db8ccdd512067b7876)
+        ;
+
+        
+    
+    
+                marker_e6b7e33be4e31f1baf1048638d334eac.setIcon(icon_c7925e8e1c5e31db55cfc4bb1bcda0af);
+            
+    
+            var marker_189988a2ea67c15d678ac853ff09dff0 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_d283f2de4a4d2b37a64a00b66246b571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_692503e62cc1ab44c65258e6e8a6c8de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53801b614addfd2665d51f32a1cc78d1 = $(`<div id="html_53801b614addfd2665d51f32a1cc78d1" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 18.3°C<br><b>Wind (Speed):</b> 10.7 km/h<br><b>Payload Mass:</b> 2205.0 kg</div>`)[0];
+                popup_692503e62cc1ab44c65258e6e8a6c8de.setContent(html_53801b614addfd2665d51f32a1cc78d1);
+            
+        
+
+        marker_189988a2ea67c15d678ac853ff09dff0.bindPopup(popup_692503e62cc1ab44c65258e6e8a6c8de)
+        ;
+
+        
+    
+    
+                marker_189988a2ea67c15d678ac853ff09dff0.setIcon(icon_d283f2de4a4d2b37a64a00b66246b571);
+            
+    
+            var marker_52d15d816e7c0792c06a4df59333e133 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_97547bb5b5b57aaede111e2030f1d926 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccba8cf48e1bd769dfc538570c422623 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2ef62c0e44a2c7355c69a530a8c3a52 = $(`<div id="html_c2ef62c0e44a2c7355c69a530a8c3a52" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 8.2°C<br><b>Wind (Speed):</b> 9.4 km/h<br><b>Payload Mass:</b> 9600.0 kg</div>`)[0];
+                popup_ccba8cf48e1bd769dfc538570c422623.setContent(html_c2ef62c0e44a2c7355c69a530a8c3a52);
+            
+        
+
+        marker_52d15d816e7c0792c06a4df59333e133.bindPopup(popup_ccba8cf48e1bd769dfc538570c422623)
+        ;
+
+        
+    
+    
+                marker_52d15d816e7c0792c06a4df59333e133.setIcon(icon_97547bb5b5b57aaede111e2030f1d926);
+            
+    
+            var marker_f67e95dabb8738009dcb8440f3977696 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_4033ef51d865b8622fe2b462e107c7fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b43932ac6ff2e8f1cc6b3d7805d5d314 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5fe4ccf694745bbf68cfb774247a988 = $(`<div id="html_f5fe4ccf694745bbf68cfb774247a988" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 17.3°C<br><b>Wind (Speed):</b> 12.9 km/h<br><b>Payload Mass:</b> 6123.547647058824 kg</div>`)[0];
+                popup_b43932ac6ff2e8f1cc6b3d7805d5d314.setContent(html_f5fe4ccf694745bbf68cfb774247a988);
+            
+        
+
+        marker_f67e95dabb8738009dcb8440f3977696.bindPopup(popup_b43932ac6ff2e8f1cc6b3d7805d5d314)
+        ;
+
+        
+    
+    
+                marker_f67e95dabb8738009dcb8440f3977696.setIcon(icon_4033ef51d865b8622fe2b462e107c7fd);
+            
+    
+            var marker_9d8ccb0c8138e35515417352f058d080 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_f63411d4539ba5a675a3e230ea153cf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b6249895225032e180838980dc258de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd3ccb58ee6a255eee0b576d449c0581 = $(`<div id="html_dd3ccb58ee6a255eee0b576d449c0581" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 14.3°C<br><b>Wind (Speed):</b> 13.5 km/h<br><b>Payload Mass:</b> 4230.0 kg</div>`)[0];
+                popup_4b6249895225032e180838980dc258de.setContent(html_dd3ccb58ee6a255eee0b576d449c0581);
+            
+        
+
+        marker_9d8ccb0c8138e35515417352f058d080.bindPopup(popup_4b6249895225032e180838980dc258de)
+        ;
+
+        
+    
+    
+                marker_9d8ccb0c8138e35515417352f058d080.setIcon(icon_f63411d4539ba5a675a3e230ea153cf9);
+            
+    
+            var marker_719eeaab3f549b7451fecacbf8964730 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_9187e9c71282af4c22c3aa9b9853d23b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0b1b906cfd782d16cef65fb2fc89327 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a40363f7cb5b354850be42c33fb03a3 = $(`<div id="html_9a40363f7cb5b354850be42c33fb03a3" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 18.8°C<br><b>Wind (Speed):</b> 13.0 km/h<br><b>Payload Mass:</b> 6092.0 kg</div>`)[0];
+                popup_e0b1b906cfd782d16cef65fb2fc89327.setContent(html_9a40363f7cb5b354850be42c33fb03a3);
+            
+        
+
+        marker_719eeaab3f549b7451fecacbf8964730.bindPopup(popup_e0b1b906cfd782d16cef65fb2fc89327)
+        ;
+
+        
+    
+    
+                marker_719eeaab3f549b7451fecacbf8964730.setIcon(icon_9187e9c71282af4c22c3aa9b9853d23b);
+            
+    
+            var marker_15b9c34cfb9639883690487f86a87d7a = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_82ca49a1e177c7c9807b5571ccd060fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8677391f005c62fb8bb62f58905d912 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_714575a819073062f95c5765b22ce51c = $(`<div id="html_714575a819073062f95c5765b22ce51c" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> No<br><b>Temp (Avg):</b> 12.2°C<br><b>Wind (Speed):</b> 7.8 km/h<br><b>Payload Mass:</b> 9600.0 kg</div>`)[0];
+                popup_a8677391f005c62fb8bb62f58905d912.setContent(html_714575a819073062f95c5765b22ce51c);
+            
+        
+
+        marker_15b9c34cfb9639883690487f86a87d7a.bindPopup(popup_a8677391f005c62fb8bb62f58905d912)
+        ;
+
+        
+    
+    
+                marker_15b9c34cfb9639883690487f86a87d7a.setIcon(icon_82ca49a1e177c7c9807b5571ccd060fe);
+            
+    
+            var marker_fd7aeff9f2dbc7308c7d27c4f11daa7a = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_27119971ecf85509bb56b62debcc6d39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56208dbe6c89bf6e0c0dbb6a5d081419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5a0bd93f77267f3b7902bdacdb3b897 = $(`<div id="html_d5a0bd93f77267f3b7902bdacdb3b897" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 21.9°C<br><b>Wind (Speed):</b> 9.9 km/h<br><b>Payload Mass:</b> 2760.0 kg</div>`)[0];
+                popup_56208dbe6c89bf6e0c0dbb6a5d081419.setContent(html_d5a0bd93f77267f3b7902bdacdb3b897);
+            
+        
+
+        marker_fd7aeff9f2dbc7308c7d27c4f11daa7a.bindPopup(popup_56208dbe6c89bf6e0c0dbb6a5d081419)
+        ;
+
+        
+    
+    
+                marker_fd7aeff9f2dbc7308c7d27c4f11daa7a.setIcon(icon_27119971ecf85509bb56b62debcc6d39);
+            
+    
+            var marker_541fb77c6994ec01950d5ef0ed7be3f1 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_a8c11429d5307d8cd32d2e7a878fe8a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44c5f4ff8fefe987168eac11f2a48d47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63eb691d0d58369bd56c3549cc2f46b9 = $(`<div id="html_63eb691d0d58369bd56c3549cc2f46b9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 20.1°C<br><b>Wind (Speed):</b> 10.8 km/h<br><b>Payload Mass:</b> 350.0 kg</div>`)[0];
+                popup_44c5f4ff8fefe987168eac11f2a48d47.setContent(html_63eb691d0d58369bd56c3549cc2f46b9);
+            
+        
+
+        marker_541fb77c6994ec01950d5ef0ed7be3f1.bindPopup(popup_44c5f4ff8fefe987168eac11f2a48d47)
+        ;
+
+        
+    
+    
+                marker_541fb77c6994ec01950d5ef0ed7be3f1.setIcon(icon_a8c11429d5307d8cd32d2e7a878fe8a7);
+            
+    
+            var marker_9513d0e7b920f5671604af8afb97263c = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_000089b95cb9f193cce4b978b7954db9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c694f3bbfad49063d62fae499efde0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a966e750b83f20044a2d889f54e01eb = $(`<div id="html_3a966e750b83f20044a2d889f54e01eb" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 24.2°C<br><b>Wind (Speed):</b> 5.8 km/h<br><b>Payload Mass:</b> 3750.0 kg</div>`)[0];
+                popup_5c694f3bbfad49063d62fae499efde0f.setContent(html_3a966e750b83f20044a2d889f54e01eb);
+            
+        
+
+        marker_9513d0e7b920f5671604af8afb97263c.bindPopup(popup_5c694f3bbfad49063d62fae499efde0f)
+        ;
+
+        
+    
+    
+                marker_9513d0e7b920f5671604af8afb97263c.setIcon(icon_000089b95cb9f193cce4b978b7954db9);
+            
+    
+            var marker_a6cc750665f5d408f4bc32525aa16e75 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_1b617dc322d4ce1903f018117e25c57e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73f7e76562ef75e3dfeab83cb22faa35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c6428f658b23263ac3ca56cc905231d = $(`<div id="html_7c6428f658b23263ac3ca56cc905231d" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 28.1°C<br><b>Wind (Speed):</b> 16.8 km/h<br><b>Payload Mass:</b> 5383.85 kg</div>`)[0];
+                popup_73f7e76562ef75e3dfeab83cb22faa35.setContent(html_7c6428f658b23263ac3ca56cc905231d);
+            
+        
+
+        marker_a6cc750665f5d408f4bc32525aa16e75.bindPopup(popup_73f7e76562ef75e3dfeab83cb22faa35)
+        ;
+
+        
+    
+    
+                marker_a6cc750665f5d408f4bc32525aa16e75.setIcon(icon_1b617dc322d4ce1903f018117e25c57e);
+            
+    
+            var marker_9971576b2289cb8b2f9787ba55b97a3d = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_a8958765636f9a61f10cfb4e7688e2ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ea2fa9f0a72b3ff27a8338a9bd1ea0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e329127db03d500f13427e7cb7c1f50a = $(`<div id="html_e329127db03d500f13427e7cb7c1f50a" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 26.0°C<br><b>Wind (Speed):</b> 10.3 km/h<br><b>Payload Mass:</b> 2410.0 kg</div>`)[0];
+                popup_3ea2fa9f0a72b3ff27a8338a9bd1ea0f.setContent(html_e329127db03d500f13427e7cb7c1f50a);
+            
+        
+
+        marker_9971576b2289cb8b2f9787ba55b97a3d.bindPopup(popup_3ea2fa9f0a72b3ff27a8338a9bd1ea0f)
+        ;
+
+        
+    
+    
+                marker_9971576b2289cb8b2f9787ba55b97a3d.setIcon(icon_a8958765636f9a61f10cfb4e7688e2ed);
+            
+    
+            var marker_9723990892b9b410c6251d59f5d3a5db = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_4654358c5a15d02b3195d007f98c8571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5885f1f1515187df0189760e08ed2553 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c48337248645cc437115526eea0271b6 = $(`<div id="html_c48337248645cc437115526eea0271b6" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 27.0°C<br><b>Wind (Speed):</b> 15.3 km/h<br><b>Payload Mass:</b> 7076.0 kg</div>`)[0];
+                popup_5885f1f1515187df0189760e08ed2553.setContent(html_c48337248645cc437115526eea0271b6);
+            
+        
+
+        marker_9723990892b9b410c6251d59f5d3a5db.bindPopup(popup_5885f1f1515187df0189760e08ed2553)
+        ;
+
+        
+    
+    
+                marker_9723990892b9b410c6251d59f5d3a5db.setIcon(icon_4654358c5a15d02b3195d007f98c8571);
+            
+    
+            var marker_c2d161bea5efc16bf9998351977750e0 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_9068626a5ab60fa0fa8d032e1861f02b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bffdb16e79c6e9c0d3a5e38dee722559 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68c1fcc474d3df523efd4b2c5cce1dfa = $(`<div id="html_68c1fcc474d3df523efd4b2c5cce1dfa" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 15.0°C<br><b>Wind (Speed):</b> 12.3 km/h<br><b>Payload Mass:</b> 9600.0 kg</div>`)[0];
+                popup_bffdb16e79c6e9c0d3a5e38dee722559.setContent(html_68c1fcc474d3df523efd4b2c5cce1dfa);
+            
+        
+
+        marker_c2d161bea5efc16bf9998351977750e0.bindPopup(popup_bffdb16e79c6e9c0d3a5e38dee722559)
+        ;
+
+        
+    
+    
+                marker_c2d161bea5efc16bf9998351977750e0.setIcon(icon_9068626a5ab60fa0fa8d032e1861f02b);
+            
+    
+            var marker_08b571a75bc09eb0ea0e109d40a84783 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_9549eac4a941da5907e3f820fd799aaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be5ddb8123772304bca010caeef33abd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d30063b16994610adf314c58faf52d8 = $(`<div id="html_9d30063b16994610adf314c58faf52d8" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 28.7°C<br><b>Wind (Speed):</b> 13.5 km/h<br><b>Payload Mass:</b> 5800.0 kg</div>`)[0];
+                popup_be5ddb8123772304bca010caeef33abd.setContent(html_9d30063b16994610adf314c58faf52d8);
+            
+        
+
+        marker_08b571a75bc09eb0ea0e109d40a84783.bindPopup(popup_be5ddb8123772304bca010caeef33abd)
+        ;
+
+        
+    
+    
+                marker_08b571a75bc09eb0ea0e109d40a84783.setIcon(icon_9549eac4a941da5907e3f820fd799aaa);
+            
+    
+            var marker_119ebbd0de7443f4e9861af82a180e3b = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_20d0d651167cea2c77b39aa0dbdfe2fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e48d54a5f4e89631f3973f65803d4153 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ba1ed82041fb1fea5f960485d5a1a0a = $(`<div id="html_0ba1ed82041fb1fea5f960485d5a1a0a" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 27.6°C<br><b>Wind (Speed):</b> 9.0 km/h<br><b>Payload Mass:</b> 7060.0 kg</div>`)[0];
+                popup_e48d54a5f4e89631f3973f65803d4153.setContent(html_0ba1ed82041fb1fea5f960485d5a1a0a);
+            
+        
+
+        marker_119ebbd0de7443f4e9861af82a180e3b.bindPopup(popup_e48d54a5f4e89631f3973f65803d4153)
+        ;
+
+        
+    
+    
+                marker_119ebbd0de7443f4e9861af82a180e3b.setIcon(icon_20d0d651167cea2c77b39aa0dbdfe2fd);
+            
+    
+            var marker_646140b78dbd04a3acf1326bdfdaff55 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_e43d2f649b110f706203f2d34bfae0fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_892bb972fb1347142e7cc9c37e49fa0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a5592eab0681f47c4b9dca2b03f53e5 = $(`<div id="html_4a5592eab0681f47c4b9dca2b03f53e5" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 19.9°C<br><b>Wind (Speed):</b> 10.1 km/h<br><b>Payload Mass:</b> 2800.0 kg</div>`)[0];
+                popup_892bb972fb1347142e7cc9c37e49fa0a.setContent(html_4a5592eab0681f47c4b9dca2b03f53e5);
+            
+        
+
+        marker_646140b78dbd04a3acf1326bdfdaff55.bindPopup(popup_892bb972fb1347142e7cc9c37e49fa0a)
+        ;
+
+        
+    
+    
+                marker_646140b78dbd04a3acf1326bdfdaff55.setIcon(icon_e43d2f649b110f706203f2d34bfae0fd);
+            
+    
+            var marker_d39a536dfa8a464d5841b9942bcfe2a1 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_35dde7fef72b302ff137a9648a12def2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4465d4ef2c977e432497df782ad102a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee649f2edd0cc503d955eddb3b82a7fb = $(`<div id="html_ee649f2edd0cc503d955eddb3b82a7fb" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 21.3°C<br><b>Wind (Speed):</b> 14.2 km/h<br><b>Payload Mass:</b> 3000.0 kg</div>`)[0];
+                popup_d4465d4ef2c977e432497df782ad102a.setContent(html_ee649f2edd0cc503d955eddb3b82a7fb);
+            
+        
+
+        marker_d39a536dfa8a464d5841b9942bcfe2a1.bindPopup(popup_d4465d4ef2c977e432497df782ad102a)
+        ;
+
+        
+    
+    
+                marker_d39a536dfa8a464d5841b9942bcfe2a1.setIcon(icon_35dde7fef72b302ff137a9648a12def2);
+            
+    
+            var marker_3c188f53f4bb9df9d807af5e2b227120 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_b6092295f9dcb7c420294aa00c7204b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3733c87ef610939dd09b5312bb150aea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71cab6c4c87cc1cb3801e971aad1d447 = $(`<div id="html_71cab6c4c87cc1cb3801e971aad1d447" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 10.1°C<br><b>Wind (Speed):</b> 11.5 km/h<br><b>Payload Mass:</b> 4000.0 kg</div>`)[0];
+                popup_3733c87ef610939dd09b5312bb150aea.setContent(html_71cab6c4c87cc1cb3801e971aad1d447);
+            
+        
+
+        marker_3c188f53f4bb9df9d807af5e2b227120.bindPopup(popup_3733c87ef610939dd09b5312bb150aea)
+        ;
+
+        
+    
+    
+                marker_3c188f53f4bb9df9d807af5e2b227120.setIcon(icon_b6092295f9dcb7c420294aa00c7204b1);
+            
+    
+            var marker_22934b6249a75e8b6521e5bbb38baf0b = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_2429553e8c47c9c2ba22bada3cc98fd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39e6bcd5cd74e899e625eec9930be22b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72e4aab1afeb9e4a4b78704756be6dd8 = $(`<div id="html_72e4aab1afeb9e4a4b78704756be6dd8" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 13.8°C<br><b>Wind (Speed):</b> 20.9 km/h<br><b>Payload Mass:</b> 2573.0 kg</div>`)[0];
+                popup_39e6bcd5cd74e899e625eec9930be22b.setContent(html_72e4aab1afeb9e4a4b78704756be6dd8);
+            
+        
+
+        marker_22934b6249a75e8b6521e5bbb38baf0b.bindPopup(popup_39e6bcd5cd74e899e625eec9930be22b)
+        ;
+
+        
+    
+    
+                marker_22934b6249a75e8b6521e5bbb38baf0b.setIcon(icon_2429553e8c47c9c2ba22bada3cc98fd5);
+            
+    
+            var marker_47e6cd7017904281b6b7e7cc07dbcbc7 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_2994d4e22f95b3ebedd4cac2b8a89393 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9661c6089a91fc99ffdf9c9c6d4aa395 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd43f9106e6969dde7ac22eac9629a57 = $(`<div id="html_dd43f9106e6969dde7ac22eac9629a57" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 11.6°C<br><b>Wind (Speed):</b> 7.2 km/h<br><b>Payload Mass:</b> 4400.0 kg</div>`)[0];
+                popup_9661c6089a91fc99ffdf9c9c6d4aa395.setContent(html_dd43f9106e6969dde7ac22eac9629a57);
+            
+        
+
+        marker_47e6cd7017904281b6b7e7cc07dbcbc7.bindPopup(popup_9661c6089a91fc99ffdf9c9c6d4aa395)
+        ;
+
+        
+    
+    
+                marker_47e6cd7017904281b6b7e7cc07dbcbc7.setIcon(icon_2994d4e22f95b3ebedd4cac2b8a89393);
+            
+    
+            var marker_f915cc35da97f345f9875fd05e35a8eb = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_9fab0ae46572ca2c7a852ce53da971dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfad3cbf567c6a285f8161397eca7deb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45edc06305cfb4150afa44f3fda1f24d = $(`<div id="html_45edc06305cfb4150afa44f3fda1f24d" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 12.3°C<br><b>Wind (Speed):</b> 23.2 km/h<br><b>Payload Mass:</b> 9600.0 kg</div>`)[0];
+                popup_dfad3cbf567c6a285f8161397eca7deb.setContent(html_45edc06305cfb4150afa44f3fda1f24d);
+            
+        
+
+        marker_f915cc35da97f345f9875fd05e35a8eb.bindPopup(popup_dfad3cbf567c6a285f8161397eca7deb)
+        ;
+
+        
+    
+    
+                marker_f915cc35da97f345f9875fd05e35a8eb.setIcon(icon_9fab0ae46572ca2c7a852ce53da971dd);
+            
+    
+            var marker_50fd1435653542445f1810da20b59a24 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_5fa8f484b88b66e3c3ea20f73dcfdded = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af90e6edeb42c372606e3b0d97a45837 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfc5b7043e1dbeacea8b26539cfe7f81 = $(`<div id="html_dfc5b7043e1dbeacea8b26539cfe7f81" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 21.2°C<br><b>Wind (Speed):</b> 4.6 km/h<br><b>Payload Mass:</b> 12259.0 kg</div>`)[0];
+                popup_af90e6edeb42c372606e3b0d97a45837.setContent(html_dfc5b7043e1dbeacea8b26539cfe7f81);
+            
+        
+
+        marker_50fd1435653542445f1810da20b59a24.bindPopup(popup_af90e6edeb42c372606e3b0d97a45837)
+        ;
+
+        
+    
+    
+                marker_50fd1435653542445f1810da20b59a24.setIcon(icon_5fa8f484b88b66e3c3ea20f73dcfdded);
+            
+    
+            var marker_368637f89f68440cb6c6b519ddde9f50 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_e5f3473d0791b5a22dfab69c7c782c34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2b7ca7abaef0411c87c8b915f258807 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2e310ed782c54eafe32553311ff1039 = $(`<div id="html_c2e310ed782c54eafe32553311ff1039" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 24.5°C<br><b>Wind (Speed):</b> 13.2 km/h<br><b>Payload Mass:</b> 2482.0 kg</div>`)[0];
+                popup_c2b7ca7abaef0411c87c8b915f258807.setContent(html_c2e310ed782c54eafe32553311ff1039);
+            
+        
+
+        marker_368637f89f68440cb6c6b519ddde9f50.bindPopup(popup_c2b7ca7abaef0411c87c8b915f258807)
+        ;
+
+        
+    
+    
+                marker_368637f89f68440cb6c6b519ddde9f50.setIcon(icon_e5f3473d0791b5a22dfab69c7c782c34);
+            
+    
+            var marker_45c93612c2ae6a8c2af06bdae3f4e5d2 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_12f2a4ffd67164eb58f008af51b3bbe6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48642d731bd0c995fbc3de6befad2497 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e4673fa2bcf23a542c6749c35d0f40c = $(`<div id="html_8e4673fa2bcf23a542c6749c35d0f40c" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 22.66666666666666°C<br><b>Wind (Speed):</b> 12.943396226415096 km/h<br><b>Payload Mass:</b> 13200.0 kg</div>`)[0];
+                popup_48642d731bd0c995fbc3de6befad2497.setContent(html_8e4673fa2bcf23a542c6749c35d0f40c);
+            
+        
+
+        marker_45c93612c2ae6a8c2af06bdae3f4e5d2.bindPopup(popup_48642d731bd0c995fbc3de6befad2497)
+        ;
+
+        
+    
+    
+                marker_45c93612c2ae6a8c2af06bdae3f4e5d2.setIcon(icon_12f2a4ffd67164eb58f008af51b3bbe6);
+            
+    
+            var marker_79aecfdd205d00d4fb5b0111d726e0d1 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_1de74e24594f47860755f6821c5f9c1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2ed5df6007a2d4190d7be94075b85e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c547e7c28353236556e4e927de56daa = $(`<div id="html_7c547e7c28353236556e4e927de56daa" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> VAFB SLC 4E<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 14.9°C<br><b>Wind (Speed):</b> 10.0 km/h<br><b>Payload Mass:</b> 1425.0 kg</div>`)[0];
+                popup_e2ed5df6007a2d4190d7be94075b85e4.setContent(html_7c547e7c28353236556e4e927de56daa);
+            
+        
+
+        marker_79aecfdd205d00d4fb5b0111d726e0d1.bindPopup(popup_e2ed5df6007a2d4190d7be94075b85e4)
+        ;
+
+        
+    
+    
+                marker_79aecfdd205d00d4fb5b0111d726e0d1.setIcon(icon_1de74e24594f47860755f6821c5f9c1e);
+            
+    
+            var marker_9e5e41105cad4074a61a03dd06f311d5 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_c84d093ae35a99f087ea8b868720e4f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2e1cb1f1361637dcc9aad2d209cfec7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf573ed7c752fbf5a6f9f1a49f4ca01f = $(`<div id="html_cf573ed7c752fbf5a6f9f1a49f4ca01f" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 25.1°C<br><b>Wind (Speed):</b> 6.8 km/h<br><b>Payload Mass:</b> 2227.7 kg</div>`)[0];
+                popup_b2e1cb1f1361637dcc9aad2d209cfec7.setContent(html_cf573ed7c752fbf5a6f9f1a49f4ca01f);
+            
+        
+
+        marker_9e5e41105cad4074a61a03dd06f311d5.bindPopup(popup_b2e1cb1f1361637dcc9aad2d209cfec7)
+        ;
+
+        
+    
+    
+                marker_9e5e41105cad4074a61a03dd06f311d5.setIcon(icon_c84d093ae35a99f087ea8b868720e4f5);
+            
+    
+            var marker_07494d37468ff7b7b48f4d71c49313a5 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_cddad463f570a3eae1a6fcbcfe26a662 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fffc4b4958bc08ae14d26be945a3d80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd4545b249346c22f8cd4f3022dfba77 = $(`<div id="html_fd4545b249346c22f8cd4f3022dfba77" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 26.2°C<br><b>Wind (Speed):</b> 9.8 km/h<br><b>Payload Mass:</b> 6500.0 kg</div>`)[0];
+                popup_1fffc4b4958bc08ae14d26be945a3d80.setContent(html_fd4545b249346c22f8cd4f3022dfba77);
+            
+        
+
+        marker_07494d37468ff7b7b48f4d71c49313a5.bindPopup(popup_1fffc4b4958bc08ae14d26be945a3d80)
+        ;
+
+        
+    
+    
+                marker_07494d37468ff7b7b48f4d71c49313a5.setIcon(icon_cddad463f570a3eae1a6fcbcfe26a662);
+            
+    
+            var marker_5c720603557500711f7a522b321cda50 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_6e6a3673f6029c95c6e6a610a5f07f77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_149a83e774f095bc3e11501229a1e90e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_243de4e64070ff8e3d1328af327ba632 = $(`<div id="html_243de4e64070ff8e3d1328af327ba632" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 22.3°C<br><b>Wind (Speed):</b> 8.2 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_149a83e774f095bc3e11501229a1e90e.setContent(html_243de4e64070ff8e3d1328af327ba632);
+            
+        
+
+        marker_5c720603557500711f7a522b321cda50.bindPopup(popup_149a83e774f095bc3e11501229a1e90e)
+        ;
+
+        
+    
+    
+                marker_5c720603557500711f7a522b321cda50.setIcon(icon_6e6a3673f6029c95c6e6a610a5f07f77);
+            
+    
+            var marker_9fcbd5b52ec587e3b710629b0db05c30 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_46b3a175117122d5c6c590131e2e0496 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed7497eeb04d5f24d6d3076a9ff46814 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74af0cd2c4a259805dd97957e5b4dc89 = $(`<div id="html_74af0cd2c4a259805dd97957e5b4dc89" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 14.7°C<br><b>Wind (Speed):</b> 11.7 km/h<br><b>Payload Mass:</b> 5000.0 kg</div>`)[0];
+                popup_ed7497eeb04d5f24d6d3076a9ff46814.setContent(html_74af0cd2c4a259805dd97957e5b4dc89);
+            
+        
+
+        marker_9fcbd5b52ec587e3b710629b0db05c30.bindPopup(popup_ed7497eeb04d5f24d6d3076a9ff46814)
+        ;
+
+        
+    
+    
+                marker_9fcbd5b52ec587e3b710629b0db05c30.setIcon(icon_46b3a175117122d5c6c590131e2e0496);
+            
+    
+            var marker_e3f971215ff86843e3b3ec08b0f44860 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_660ff31db0ac2ad53d7fb5b3f8a57f05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_260c174c49e45908aa0d23e1771220ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f26fe28c87c2335be80ab85165baa1fb = $(`<div id="html_f26fe28c87c2335be80ab85165baa1fb" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 24.0°C<br><b>Wind (Speed):</b> 13.3 km/h<br><b>Payload Mass:</b> 6800.0 kg</div>`)[0];
+                popup_260c174c49e45908aa0d23e1771220ee.setContent(html_f26fe28c87c2335be80ab85165baa1fb);
+            
+        
+
+        marker_e3f971215ff86843e3b3ec08b0f44860.bindPopup(popup_260c174c49e45908aa0d23e1771220ee)
+        ;
+
+        
+    
+    
+                marker_e3f971215ff86843e3b3ec08b0f44860.setIcon(icon_660ff31db0ac2ad53d7fb5b3f8a57f05);
+            
+    
+            var marker_dead474cc11cd0f233e1576d40160655 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_8d3ce2a68af5f8c55886362199cbd7a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11a052dfa50a87adf74f3b9803f317c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_506d1ff9dd28749137bc2e4dad657cd0 = $(`<div id="html_506d1ff9dd28749137bc2e4dad657cd0" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 14.3°C<br><b>Wind (Speed):</b> 9.3 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_11a052dfa50a87adf74f3b9803f317c5.setContent(html_506d1ff9dd28749137bc2e4dad657cd0);
+            
+        
+
+        marker_dead474cc11cd0f233e1576d40160655.bindPopup(popup_11a052dfa50a87adf74f3b9803f317c5)
+        ;
+
+        
+    
+    
+                marker_dead474cc11cd0f233e1576d40160655.setIcon(icon_8d3ce2a68af5f8c55886362199cbd7a9);
+            
+    
+            var marker_f77e90bec69f82b46c65ee360c15baad = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_ab1949daf72a26d0882b4f28c527e98c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b454fc3b6286beb9609aefef7b88c185 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6275e013fe3b91377daeb5854d49aeb6 = $(`<div id="html_6275e013fe3b91377daeb5854d49aeb6" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> No<br><b>Temp (Avg):</b> 21.2°C<br><b>Wind (Speed):</b> 12.9 km/h<br><b>Payload Mass:</b> 6123.547647058824 kg</div>`)[0];
+                popup_b454fc3b6286beb9609aefef7b88c185.setContent(html_6275e013fe3b91377daeb5854d49aeb6);
+            
+        
+
+        marker_f77e90bec69f82b46c65ee360c15baad.bindPopup(popup_b454fc3b6286beb9609aefef7b88c185)
+        ;
+
+        
+    
+    
+                marker_f77e90bec69f82b46c65ee360c15baad.setIcon(icon_ab1949daf72a26d0882b4f28c527e98c);
+            
+    
+            var marker_54499448ea6b42d298c95b71c44b3033 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_91de48c6b542907ed0967087782fa77c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73eb037eaf356e02e68ebd4563ab940c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26e2e91d9be2f0860bc94bbbde53e660 = $(`<div id="html_26e2e91d9be2f0860bc94bbbde53e660" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 16.6°C<br><b>Wind (Speed):</b> 8.4 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_73eb037eaf356e02e68ebd4563ab940c.setContent(html_26e2e91d9be2f0860bc94bbbde53e660);
+            
+        
+
+        marker_54499448ea6b42d298c95b71c44b3033.bindPopup(popup_73eb037eaf356e02e68ebd4563ab940c)
+        ;
+
+        
+    
+    
+                marker_54499448ea6b42d298c95b71c44b3033.setIcon(icon_91de48c6b542907ed0967087782fa77c);
+            
+    
+            var marker_68479d81ee6d52cbe4541a9121530260 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_c6e4752633c77da8fe83043aab1792a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa80a25bd479d8f0804c23a7faeac950 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b12ec55d0960404bc1fe06cf073aa29 = $(`<div id="html_5b12ec55d0960404bc1fe06cf073aa29" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> No<br><b>Temp (Avg):</b> 20.9°C<br><b>Wind (Speed):</b> 7.8 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_aa80a25bd479d8f0804c23a7faeac950.setContent(html_5b12ec55d0960404bc1fe06cf073aa29);
+            
+        
+
+        marker_68479d81ee6d52cbe4541a9121530260.bindPopup(popup_aa80a25bd479d8f0804c23a7faeac950)
+        ;
+
+        
+    
+    
+                marker_68479d81ee6d52cbe4541a9121530260.setIcon(icon_c6e4752633c77da8fe83043aab1792a2);
+            
+    
+            var marker_a0a92b5ab73a24b8d388ba345d71bd35 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_748f90a10f1d2468578967e830f2839d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c61c0693adeeaac1ce601457f18073a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b754338e8aaf4b5ca45db5e52a30e33 = $(`<div id="html_9b754338e8aaf4b5ca45db5e52a30e33" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 15.4°C<br><b>Wind (Speed):</b> 25.2 km/h<br><b>Payload Mass:</b> 1977.0 kg</div>`)[0];
+                popup_3c61c0693adeeaac1ce601457f18073a.setContent(html_9b754338e8aaf4b5ca45db5e52a30e33);
+            
+        
+
+        marker_a0a92b5ab73a24b8d388ba345d71bd35.bindPopup(popup_3c61c0693adeeaac1ce601457f18073a)
+        ;
+
+        
+    
+    
+                marker_a0a92b5ab73a24b8d388ba345d71bd35.setIcon(icon_748f90a10f1d2468578967e830f2839d);
+            
+    
+            var marker_2d8eb6e888369c1a0fffee3dc609e312 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_39e2a86a92e7dfdd0995b75b8cf4a4d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6320d4d1f1f4aee93aa3015f7fff93d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_188dcd9d804b9faf44466d738126e5c1 = $(`<div id="html_188dcd9d804b9faf44466d738126e5c1" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> No<br><b>Temp (Avg):</b> 22.2°C<br><b>Wind (Speed):</b> 7.8 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_6320d4d1f1f4aee93aa3015f7fff93d9.setContent(html_188dcd9d804b9faf44466d738126e5c1);
+            
+        
+
+        marker_2d8eb6e888369c1a0fffee3dc609e312.bindPopup(popup_6320d4d1f1f4aee93aa3015f7fff93d9)
+        ;
+
+        
+    
+    
+                marker_2d8eb6e888369c1a0fffee3dc609e312.setIcon(icon_39e2a86a92e7dfdd0995b75b8cf4a4d6);
+            
+    
+            var marker_c79eb2ccaac438e8902ceef850ed8677 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_69d0b3fd027a5b78a259d84d9af49aaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a57890e4c6e088e6dd0d40f4525a892 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41a7d31d4710005dc25fe7ba34611aa9 = $(`<div id="html_41a7d31d4710005dc25fe7ba34611aa9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 21.1°C<br><b>Wind (Speed):</b> 9.2 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_2a57890e4c6e088e6dd0d40f4525a892.setContent(html_41a7d31d4710005dc25fe7ba34611aa9);
+            
+        
+
+        marker_c79eb2ccaac438e8902ceef850ed8677.bindPopup(popup_2a57890e4c6e088e6dd0d40f4525a892)
+        ;
+
+        
+    
+    
+                marker_c79eb2ccaac438e8902ceef850ed8677.setIcon(icon_69d0b3fd027a5b78a259d84d9af49aaa);
+            
+    
+            var marker_59706e0f2ef4fad3f4753546a83b35d9 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_385f87a7ed93dd1d0adc4098c67579d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ec513857fc11435170b024654a22027 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74e5cd358b29acdd715504094372a97f = $(`<div id="html_74e5cd358b29acdd715504094372a97f" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 26.5°C<br><b>Wind (Speed):</b> 9.4 km/h<br><b>Payload Mass:</b> 9525.0 kg</div>`)[0];
+                popup_5ec513857fc11435170b024654a22027.setContent(html_74e5cd358b29acdd715504094372a97f);
+            
+        
+
+        marker_59706e0f2ef4fad3f4753546a83b35d9.bindPopup(popup_5ec513857fc11435170b024654a22027)
+        ;
+
+        
+    
+    
+                marker_59706e0f2ef4fad3f4753546a83b35d9.setIcon(icon_385f87a7ed93dd1d0adc4098c67579d6);
+            
+    
+            var marker_4a49645ac72354d50a13dbcd7165217e = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_e50e3bcc4c0360df6ee3d0a6d4c9b85d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_804904bb019ba8969a0466d35a310908 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c87f350681e4471e47278c13d4afa648 = $(`<div id="html_c87f350681e4471e47278c13d4afa648" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 24.1°C<br><b>Wind (Speed):</b> 9.7 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_804904bb019ba8969a0466d35a310908.setContent(html_c87f350681e4471e47278c13d4afa648);
+            
+        
+
+        marker_4a49645ac72354d50a13dbcd7165217e.bindPopup(popup_804904bb019ba8969a0466d35a310908)
+        ;
+
+        
+    
+    
+                marker_4a49645ac72354d50a13dbcd7165217e.setIcon(icon_e50e3bcc4c0360df6ee3d0a6d4c9b85d);
+            
+    
+            var marker_e2cb031cb957f88c44e1d864a717b36d = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_15d4498bf9c54441ed8cfd12bb18fa7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21762d6b3906a719383ab8d54eb0c308 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5097efd30d00bf0076c18c717eaf2e1 = $(`<div id="html_d5097efd30d00bf0076c18c717eaf2e1" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 26.1°C<br><b>Wind (Speed):</b> 10.1 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_21762d6b3906a719383ab8d54eb0c308.setContent(html_d5097efd30d00bf0076c18c717eaf2e1);
+            
+        
+
+        marker_e2cb031cb957f88c44e1d864a717b36d.bindPopup(popup_21762d6b3906a719383ab8d54eb0c308)
+        ;
+
+        
+    
+    
+                marker_e2cb031cb957f88c44e1d864a717b36d.setIcon(icon_15d4498bf9c54441ed8cfd12bb18fa7f);
+            
+    
+            var marker_2d19a93505210d4c3f9fb4f7ecae9829 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_e46eee3fd518f0646fa546f09f65b63e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8016bf6a69bccf7f72330f03149c0fa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_549ba2bc458807704ed8accd358d7a89 = $(`<div id="html_549ba2bc458807704ed8accd358d7a89" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 30.0°C<br><b>Wind (Speed):</b> 12.0 km/h<br><b>Payload Mass:</b> 3880.0 kg</div>`)[0];
+                popup_8016bf6a69bccf7f72330f03149c0fa5.setContent(html_549ba2bc458807704ed8accd358d7a89);
+            
+        
+
+        marker_2d19a93505210d4c3f9fb4f7ecae9829.bindPopup(popup_8016bf6a69bccf7f72330f03149c0fa5)
+        ;
+
+        
+    
+    
+                marker_2d19a93505210d4c3f9fb4f7ecae9829.setIcon(icon_e46eee3fd518f0646fa546f09f65b63e);
+            
+    
+            var marker_3d5b13093faf9c946813ad6a5e840d9b = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_e32c006938695dbb03bcb2c00c5ade7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efcd017d7ee609076829cadac60ad053 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eefd56b03dab1e1c7e09b4d5913f3bd9 = $(`<div id="html_eefd56b03dab1e1c7e09b4d5913f3bd9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 28.7°C<br><b>Wind (Speed):</b> 15.0 km/h<br><b>Payload Mass:</b> 6123.547647058824 kg</div>`)[0];
+                popup_efcd017d7ee609076829cadac60ad053.setContent(html_eefd56b03dab1e1c7e09b4d5913f3bd9);
+            
+        
+
+        marker_3d5b13093faf9c946813ad6a5e840d9b.bindPopup(popup_efcd017d7ee609076829cadac60ad053)
+        ;
+
+        
+    
+    
+                marker_3d5b13093faf9c946813ad6a5e840d9b.setIcon(icon_e32c006938695dbb03bcb2c00c5ade7b);
+            
+    
+            var marker_6dfa069709bf23913161d68c2621065a = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_b8b0e28a9bd9baee478bec3ca874880e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a9d94523f12c7382bf2e31c5636babc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1fd4b6d7b4622454abb4481aac62cf0 = $(`<div id="html_c1fd4b6d7b4622454abb4481aac62cf0" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 26.2°C<br><b>Wind (Speed):</b> 9.2 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_4a9d94523f12c7382bf2e31c5636babc.setContent(html_c1fd4b6d7b4622454abb4481aac62cf0);
+            
+        
+
+        marker_6dfa069709bf23913161d68c2621065a.bindPopup(popup_4a9d94523f12c7382bf2e31c5636babc)
+        ;
+
+        
+    
+    
+                marker_6dfa069709bf23913161d68c2621065a.setIcon(icon_b8b0e28a9bd9baee478bec3ca874880e);
+            
+    
+            var marker_a0f1dce196971b9f09274b14a7cee7f9 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_484246b4de1080418a21f6245d2b1b20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c0ed23ae785d0723e2abd296e84aa75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5adbf9fe396db7c115772033b2d0b8e = $(`<div id="html_b5adbf9fe396db7c115772033b2d0b8e" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 26.8°C<br><b>Wind (Speed):</b> 11.2 km/h<br><b>Payload Mass:</b> 1600.0 kg</div>`)[0];
+                popup_5c0ed23ae785d0723e2abd296e84aa75.setContent(html_b5adbf9fe396db7c115772033b2d0b8e);
+            
+        
+
+        marker_a0f1dce196971b9f09274b14a7cee7f9.bindPopup(popup_5c0ed23ae785d0723e2abd296e84aa75)
+        ;
+
+        
+    
+    
+                marker_a0f1dce196971b9f09274b14a7cee7f9.setIcon(icon_484246b4de1080418a21f6245d2b1b20);
+            
+    
+            var marker_d5e6fa29c0c7120d8fc5e51dfa5d7684 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_342504632730794cfbf731b6d7aefca1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f6b7243776068be1c57a597e553441d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5933d0b65b32899d7dec2857d57879b9 = $(`<div id="html_5933d0b65b32899d7dec2857d57879b9" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 28.9°C<br><b>Wind (Speed):</b> 6.1 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_4f6b7243776068be1c57a597e553441d.setContent(html_5933d0b65b32899d7dec2857d57879b9);
+            
+        
+
+        marker_d5e6fa29c0c7120d8fc5e51dfa5d7684.bindPopup(popup_4f6b7243776068be1c57a597e553441d)
+        ;
+
+        
+    
+    
+                marker_d5e6fa29c0c7120d8fc5e51dfa5d7684.setIcon(icon_342504632730794cfbf731b6d7aefca1);
+            
+    
+            var marker_bd1b80aee58d928acec47986b7660268 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_6e9ce0d87ccee374c756d84dced4dc55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6749077eb29ddc27851a6e77cce2fbae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a58342d206e390f3733bd2e41a4fabe = $(`<div id="html_9a58342d206e390f3733bd2e41a4fabe" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 27.4°C<br><b>Wind (Speed):</b> 6.6 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_6749077eb29ddc27851a6e77cce2fbae.setContent(html_9a58342d206e390f3733bd2e41a4fabe);
+            
+        
+
+        marker_bd1b80aee58d928acec47986b7660268.bindPopup(popup_6749077eb29ddc27851a6e77cce2fbae)
+        ;
+
+        
+    
+    
+                marker_bd1b80aee58d928acec47986b7660268.setIcon(icon_6e9ce0d87ccee374c756d84dced4dc55);
+            
+    
+            var marker_94f26f01dbf57a2885062d5026239078 = L.marker(
+                [28.6080585, -80.6039558],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_02bebb42dfda1e150dc1e04e351b8e6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48dc84de30ca0bcf2b5139bf2be7b991 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f3e4ca8bd3155001e00d2f243b6469e = $(`<div id="html_6f3e4ca8bd3155001e00d2f243b6469e" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> KSC LC 39A<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 25.2°C<br><b>Wind (Speed):</b> 15.5 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_48dc84de30ca0bcf2b5139bf2be7b991.setContent(html_6f3e4ca8bd3155001e00d2f243b6469e);
+            
+        
+
+        marker_94f26f01dbf57a2885062d5026239078.bindPopup(popup_48dc84de30ca0bcf2b5139bf2be7b991)
+        ;
+
+        
+    
+    
+                marker_94f26f01dbf57a2885062d5026239078.setIcon(icon_02bebb42dfda1e150dc1e04e351b8e6a);
+            
+    
+            var marker_65cf5ea0fef2228b97b4bb2bfb8a951b = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_5f8489a1373322f3b47a2391a8787767 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2bc329f660a939ddc51a60764b01fe3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_079d7ab8d504516d6bbeb091c5da178c = $(`<div id="html_079d7ab8d504516d6bbeb091c5da178c" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 25.8°C<br><b>Wind (Speed):</b> 12.0 km/h<br><b>Payload Mass:</b> 15600.0 kg</div>`)[0];
+                popup_c2bc329f660a939ddc51a60764b01fe3.setContent(html_079d7ab8d504516d6bbeb091c5da178c);
+            
+        
+
+        marker_65cf5ea0fef2228b97b4bb2bfb8a951b.bindPopup(popup_c2bc329f660a939ddc51a60764b01fe3)
+        ;
+
+        
+    
+    
+                marker_65cf5ea0fef2228b97b4bb2bfb8a951b.setIcon(icon_5f8489a1373322f3b47a2391a8787767);
+            
+    
+            var marker_81a5877044a8b1e405c0985991cc0902 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0);
+        
+    
+            var icon_b87e172199b10b5c8edf6972bb5736c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6634ea20ead7292e0444778ba601948 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c9308e5e8f7764d2957eb6744577564 = $(`<div id="html_4c9308e5e8f7764d2957eb6744577564" style="width: 100.0%; height: 100.0%;"><b>Launch Site:</b> CCSFS SLC 40<br><b>Success:</b> Yes<br><b>Temp (Avg):</b> 25.3°C<br><b>Wind (Speed):</b> 18.7 km/h<br><b>Payload Mass:</b> 3681.0 kg</div>`)[0];
+                popup_e6634ea20ead7292e0444778ba601948.setContent(html_4c9308e5e8f7764d2957eb6744577564);
+            
+        
+
+        marker_81a5877044a8b1e405c0985991cc0902.bindPopup(popup_e6634ea20ead7292e0444778ba601948)
+        ;
+
+        
+    
+    
+                marker_81a5877044a8b1e405c0985991cc0902.setIcon(icon_b87e172199b10b5c8edf6972bb5736c4);
+            
+    
+            marker_cluster_dce45dd3d6fd167599c9c0f85a2097d0.addTo(map_44e7881740f02af3870ca79e727304a8);
+        
+</script>
+</html>
