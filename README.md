@@ -86,7 +86,7 @@ I extended the project by:
 
 ## 🔗 Deployment
 
-- **Plotly Dash App:** [Hosted on Render](YOUR_DASH_APP_URL_HERE)  
+- **Plotly Dash App:** [Hosted on Render](https://spacex-launch-dashboard.onrender.com)  
 - **Saved Model:** `models/spacex_logreg_model.pkl` for predictive inference  
 
 ---
